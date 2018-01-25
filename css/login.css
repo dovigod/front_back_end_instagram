@@ -13,7 +13,7 @@
   margin-right: 30px;
 }
 
-.login__column > img {
+.login .login__column > img {
   height: 100%;
   width: 100%;
 }
@@ -21,9 +21,7 @@
   max-width: 180px;
   max-height: 50px;
 }
-.login__logo {
-  height: 50px;
-}
+
 .login__box {
   width: 100%;
   background-color: white;
@@ -68,6 +66,7 @@ form input {
   color: #999999;
   margin-top: 20px;
 }
+
 .login__link {
   color: #3e99ed;
 }
