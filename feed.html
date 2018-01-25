@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Feed || Instagram</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li class="header__list-item">
-                    <a href="#" class="header__icon">
+                    <a href="profile.html" class="header__icon">
                         <i class="fa fa-user-o" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -51,20 +51,30 @@
 
         <div class="photo">
             <header class="photo__header">
-                <div class="photo__header__content">
-                    <img src="images/haha.jpg" alt="nellson" class="photo__header__img">
-                    <a href="index.html" class="photo__header__link">Nellson Muntz</a>
-                </div>
+
+                <img src="images/haha.jpg" alt="nellson" class="photo__header__img">
+                <a href="index.html" class="photo__header__link">Nellson Muntz</a>
+
             </header>
             <img src="images/haha.jpg" alt="nelson" class="photo__main_pic">
             <div class="info">
                 <div class="info__icontainer">
-                    <div class="info_iconbox">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    <!--<i class="fa fa-heart" aria-hidden="true"></i>
                         <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                   -->
+                    <div class="info__iconbox">
+                        <span class="info__action">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                        </span>
+                        <span class="info__action">
+                            <i class="fa fa-comment-o" aria-hidden="true"></i>
+                        </span>
                     </div>
-                    <div class="info_iconbox">
-                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    <div class="info__iconbox">
+                        <span class="info__action">
+                            <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        </span>
                     </div>
                 </div>
 
@@ -82,7 +92,8 @@
                 </ul>
 
                 <span class="info__date">2 days ago</span>
-                <textarea name="comment" id="for comments" cols="30" rows="3" placeholder="Add a comment..."></textarea>
+                <textarea placeholder="Add a comment..."></textarea>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
             </div>
         </div>
 
