@@ -15,110 +15,86 @@
     <!-- main parts-->
 
     <main class="login">
-
         <div class="login__column">
-            <img src="images/phone.png" alt="phone for disables" title="phone" class="login__phone">
+            <img src="images/phone.png" alt="Phone" title="Phone">
         </div>
         <div class="login__column">
+            <div class="login__box">
 
-            <div class="login__column__box">
-                <div class="login__level1">
-                    <img src="images/logo.png" alt="logo" class="login__logo">
-                </div>
-                <div class="login__level1">
-                    <form action="feed.html" method="post">
-                        <!-- get는 검색용이다 -->
-                        <input type="text" name="username" placeholder="Phone number, username, or email" required>
-                        <input type="password" name="password" placeholder="password" required>
-                        <input type="submit" value="Log in">
-                    </form>
-                </div>
+                <img src="images/logo.png" alt="Logo" class="login__logo">
 
-                <div class="login__level1">
-                    <span class="login__or">or</span>
-                </div>
-                <div class="login__level1">
-                    <a href="#">
+                <form action="feed.html" method="get">
+                    <input placeholder="Username" type="text" name="username" required>
+                    <input placeholder="Password" type="password" name="password" required>
+                    <input type="submit" value="Log In" class="form__button">
+                </form>
 
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        <span class=" login__link login__link__dark">Login with facebook</span>
-                    </a>
+                <span class="login__or">or</span>
 
-                    <a href="#">
-                        <span class=" login__link login__link__dark login__link--small">forgot password?</span>
-                    </a>
-                </div>
+                <a href="#" class="login__link login__link--dark">
+                    <i class="fa fa-facebook-square"></i>
+                    Login with Facebook</a>
+                <a href="#" class="login__link login__link--dark login__link--small">Forgot password</a>
+
+
 
             </div>
 
-            <div class="login__column__box">
-                <span class="login__column__box__asking have account">don't have an account?
-                    <a href="#">log in</a>
-                </span>
+            <div class="login__box login_small">
+                <span>Don't have an account?</span>
+                <a href="#" class="login__link">Sign up</a>
             </div>
 
-            <div class="login__column__box login__column__box--transparancy">
-
-                <span class="get__app">get the app.</span>
-
-
-                <div class="login__column__box--transparancy__storepic">
-
-                    <img src="images/ios.png" tittle="for Iphone" class="login__ios__image">
-
-                </div>
-
-                <div class="login__column__box--transparancy__storpic">
-
-                    <img src="images/android.png" title="for android" class="login__android__image">
-
+            <div class="login__box login__box--transparent">
+                <span>Get the app.</span>
+                <div class="login__appstores">
+                    <img src="images/ios.png" alt="" class="login__appstore">
+                    <img src="images/android.png" alt="" class="login__appstore">
                 </div>
             </div>
         </div>
-
     </main>
 
     <!-- footer starts-->
     <footer class="footer">
-        <div class="footer__column">
-            <ul class="footer__column__footer__item">
-                <li class="footer__item-link">
-                    <a href="#">about us</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">support</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">blog</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">press</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">api</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">jobs</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">privacy</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">terms</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">directory</a>
-                </li>
-                <li class="footer__item-link">
-                    <a href="#">languages</a>
-                </li>
 
-            </ul>
-        </div>
-        <div class="footer__column">
+        <ul class="footer__column__footer__item">
+            <li class="footer__item-link">
+                <a href="#">about us</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">support</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">blog</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">press</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">api</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">jobs</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">privacy</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">terms</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">directory</a>
+            </li>
+            <li class="footer__item-link">
+                <a href="#">languages</a>
+            </li>
 
-            <span class="sentence">© 2018 Instagram</span>
-        </div>
+        </ul>
+
+
+        <span class="sentence">© 2018 Instagram</span>
+
 
     </footer>
 </body>

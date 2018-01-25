@@ -1,0 +1,27 @@
+footer {
+  width: 100%;
+  max-width: 940px;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .footer__column__footer__item {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .footer__item-link {
+  margin-right: 14px;
+  color: #043667;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer .sentence {
+  color: #999999;
+  font-weight: bold;
+  font-size: 12px;
+}

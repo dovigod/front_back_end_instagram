@@ -1,1 +1,107 @@
+.login {
+  width: 100%;
+  max-width: 770px;
 
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  align-items: center;
+}
+
+.login .login__column {
+  width: 47.5%;
+  margin-right: 30px;
+}
+
+.login__column > img {
+  height: 100%;
+  width: 100%;
+}
+.login__box > img {
+  max-width: 180px;
+  max-height: 50px;
+}
+.login__logo {
+  height: 50px;
+}
+.login__box {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #efefef;
+  margin-top: 10px;
+  padding-top: 25px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+form input {
+  width: 270px;
+  height: 40px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+  border: 1px solid #efefef;
+  background-color: #fafafa;
+}
+
+.form__button {
+  background-color: rgb(62, 153, 237);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 8px;
+  height: 30px;
+}
+.login__or {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #999999;
+  margin-top: 20px;
+}
+.login__link {
+  color: #3e99ed;
+}
+.login__link.login__link--dark {
+  display: block;
+  margin-top: 35px;
+  color: #395283;
+}
+
+.login__link.login__link--dark.login__link--small {
+  margin-bottom: 20px;
+  color: #043667;
+}
+
+.login__box.login_small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 28px;
+}
+.login__box.login__box--transparent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login__appstores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.login__appstore {
+  width: 135px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
