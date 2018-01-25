@@ -1,5 +1,38 @@
 @import 'login.css';
 
-body {
-  background-color: blue;
+* {
+  box-sizing: border-box;
 }
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.father {
+  min-height: 1000px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
+}
+.box {
+  background-color: blue;
+  width: 300px;
+
+  display: inline-block;
+  margin: 0px;
+}
+/*
+.child {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20%;
+  border: 20px groove yellow;
+}
+*/
+/* inline == 블록을 span처럼 같은 라이네 놓게해줌*/
