@@ -30,6 +30,7 @@
 
 .explore img {
   width: 55px;
+  height: 55px;
   border-radius: 50%;
   border: 1px groove skyblue;
 }
@@ -66,6 +67,7 @@
 }
 .explore__button:active {
   border-style: solid;
+  opacity: 0.8;
 }
 .explore__progfile-discription {
   display: flex;
