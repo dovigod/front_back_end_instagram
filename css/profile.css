@@ -28,20 +28,22 @@
   max-width: 30%;
   margin-right: 5%;
   margin-bottom: 5%;
+  cursor: pointer;
+  transition: opacity 0.5s linear;
+}
+.container__row .container__column:hover {
+  opacity: 0.3;
 }
 
 .container__img {
   width: 100%;
-  transition: opacity 1s linear;
-}
-.container__img:hover {
-  opacity: 0.4;
 }
 .profile__header img {
   height: 154px;
   width: 154px;
   border-radius: 50%;
   animation: for__nik 2s infinite;
+  cursor: pointer;
 }
 
 .profile__header__info {

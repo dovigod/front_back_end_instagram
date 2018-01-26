@@ -11,7 +11,7 @@
   .explore__list-item {
     border: 0;
   }
-  /*
+
   footer {
     width: 90%;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@
   .footer__item-link {
     margin-bottom: 5px;
   }
-  */
+
   .feed .photo {
     background-color: #dbdbdb;
   }
