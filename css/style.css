@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import 'reset.css';
 @import 'login.css';
 @import 'globals.css';
@@ -6,6 +6,7 @@
 @import 'navigation.css';
 @import 'feed.css';
 @import 'explore.css';
+@import 'profile.css';
 @import 'reative.css';
 /*   for practice~~
 * {

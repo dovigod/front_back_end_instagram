@@ -11,6 +11,7 @@
   .explore__list-item {
     border: 0;
   }
+  /*
   footer {
     width: 90%;
     flex-wrap: wrap;
@@ -24,6 +25,7 @@
   .footer__item-link {
     margin-bottom: 5px;
   }
+  */
   .feed .photo {
     background-color: #dbdbdb;
   }
@@ -40,12 +42,25 @@
   .info .tmp__div__feed {
     display: none;
   }
+  .login {
+    display: flex;
+    justify-content: center;
+  }
   .login .login__column > img {
     display: none;
   }
+
   .login .login__column {
-    width: 100%;
+    width: 70%;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login .login__column:nth-child(1) {
+    width: 0;
   }
 }
-
+/*  child 표기법 알기******/
 /* landscape*/
