@@ -11,10 +11,10 @@
 .login .login__column {
   width: 47.5%;
   margin-right: 30px;
+  position: relative;
 }
 
 .login .login__column > img {
-  height: 100%;
   width: 100%;
 }
 .login__box > img {
@@ -31,6 +31,8 @@
   text-align: center;
   display: inline-block;
   margin-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 form {
@@ -41,23 +43,49 @@ form {
 }
 
 form input {
-  width: 270px;
-  height: 40px;
-  margin-bottom: 6px;
+  border: 0px;
+  width: 100%;
+
+  padding: 10px 0px;
   border-radius: 5px;
   border: 1px solid #efefef;
   background-color: #fafafa;
+  padding-left: 10px;
+  font-weight: 100;
+  font-size: 13px;
 }
 
-.form__button {
+.login__form :nth-child(1) {
+  margin-bottom: 5px;
+}
+form input[type='submit'] {
   background-color: rgb(62, 153, 237);
   display: flex;
   justify-content: center;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
-  margin-top: 8px;
-  height: 30px;
+  margin-top: 15px;
+  padding: 4px 0px;
+}
+form input[required='required']:focus {
+  outline: none;
+  border: 1px solid #999999;
+}
+form input[type='submit']:active {
+  outline: none;
+  opacity: 0.8;
+}
+form input[type='submit']:hover {
+  outline: none;
+  background-color: aqua;
+  opacity: 0.8;
+}
+.divider {
+  height: 1px;
+  width: 110px;
+  position: relative;
+  border: 1px solid #999999;
 }
 .login__or {
   display: block;
