@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import 'reset.css';
 @import 'login.css';
 @import 'globals.css';
-@import 'reset.css';
 @import 'footer.css';
 @import 'navigation.css';
 @import 'feed.css';
 @import 'explore.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+@import 'reative.css';
 /*   for practice~~
 * {
   box-sizing: border-box;
