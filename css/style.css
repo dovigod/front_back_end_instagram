@@ -2,7 +2,9 @@
 @import 'globals.css';
 @import 'reset.css';
 @import 'footer.css';
-@import 'login.css';
+@import 'navigation.css';
+@import 'feed.css';
+@import 'explore.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 /*   for practice~~
 * {

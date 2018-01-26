@@ -14,36 +14,38 @@
     <!-- header of file-->
 
     <header class="header">
-        <div class="header__logo">
-            <a href="feed.html">
-                <img src="images/navi.png" alt="insta_logo" class="header__image">
-            </a>
+        <div class="saver__container">
+            <div class="header__pfcontainer">
+                <a href="feed.html" class="header__link">
+                    <img src="images/navi.png" alt="insta_logo" class="header__image">
+                </a>
+            </div>
+            <form action="#" method="get">
+                <input type="text" name="words for search" placeholder="Search" required>
+            </form>
+            <nav class="header__navigation">
+                <ul class="header__list">
+                    <li class="header__list-item">
+                        <a href="explore.html" class="header__icon">
+                            <i class="fa fa-compass" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__icon">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="header__list-item">
+                        <a href="profile.html" class="header__icon">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </nav>
         </div>
-        <form action="#" method="get">
-            <input type="text" name="words for search" placeholder="search" required>
-        </form>
-        <nav class="header__navigation">
-            <ul class="header__list">
-                <li class="header__list-item">
-                    <a href="explore.html" class="header__icon">
-                        <i class="fa fa-compass" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="#" class="header__icon">
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="profile.html" class="header__icon">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-
-
-
-        </nav>
     </header>
 
     <!-- main parts-->
@@ -63,28 +65,35 @@
                         <i class="fa fa-comment-o" aria-hidden="true"></i>
                     <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                    -->
-                    <div class="info__iconbox">
+                    <div class="info__icons">
                         <span class="info__action">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
                         </span>
                         <span class="info__action">
                             <i class="fa fa-comment-o" aria-hidden="true"></i>
                         </span>
                     </div>
-                    <div class="info__iconbox">
+
+                    <div class="info__iconss">
                         <span class="info__action">
                             <i class="fa fa-bookmark-o" aria-hidden="true"></i>
                         </span>
                     </div>
+
+
                 </div>
 
                 <span class="info__views">14,000 views</span>
                 <ul class="info__list">
                     <li class="info__list-item">
-                        <span class="info__name">simpsons</span> hahahahahahaaha~~~~!
+                        <span class="info__name">simpsons</span> is an American animated sitcom created by Matt Groening for the Fox Broadcasting
+                        Company.
                     </li>
                     <li class="info__list-item">
-                        <span class="info__name">simpsons</span> hahahahahahaaha~~~~!
+                        <span class="info__name">simpsons</span> Since its debut on December 17, 1989, 629 episodes of The Simpsons have been broadcast.
+                        Its 29th season began on October 1, 2017. It is the longest-running American sitcom and the longest-running
+                        American animated program, and, in 2009, it surpassed Gunsmoke as the longest-running American scripted
+                        primetime television series.
                     </li>
                     <li class="info__list-item">
                         <span class="info__name">simpsons</span> hahahahahahaaha~~~~!
@@ -92,8 +101,11 @@
                 </ul>
 
                 <span class="info__date">2 days ago</span>
-                <textarea placeholder="Add a comment..."></textarea>
-                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                <div class="divider"></div>
+                <div class="tmp__div__feed">
+                    <textarea placeholder="Add a comment..."></textarea>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                </div>
             </div>
         </div>
 

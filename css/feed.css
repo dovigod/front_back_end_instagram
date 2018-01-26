@@ -1,0 +1,128 @@
+/*
+*/
+body {
+  width: 100%;
+  background-color: #fafafa;
+}
+.feed {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.feed .photo {
+  /*margin-top: 20px;
+  width: 100%;*/
+  max-width: 620px;
+
+  background-color: white;
+  border: 1px solid #dbdbdb;
+}
+
+.photo__header {
+  border-bottom: 1px solid #dbdbdb;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  padding: 10px 0px;
+  padding-left: 11px;
+}
+.photo__header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  border: 4px inset rgb(162, 0, 255);
+  margin-right: 10px;
+}
+
+.photo__header .photo__header__link {
+  color: #262626;
+}
+
+.photo .info {
+  background-color: white;
+  width: 100%;
+}
+
+.info .info__icontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 15px 2px;
+  padding-right: 10px;
+}
+.photo__main_pic {
+  width: 100%;
+}
+
+.info .info__action {
+  margin-left: 18px;
+  font-size: 20px;
+}
+
+.info__icontainer:nth-child(3) {
+  margin-left: 300px;
+}
+.info__views {
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+.info__list {
+  margin-left: 18px;
+}
+
+.info__list .info__list-item {
+  margin-top: 13px;
+}
+
+.info__list-item .info__name {
+  font-weight: bold;
+}
+
+.info__date {
+  margin-top: 13px;
+  margin-left: 18px;
+  font-size: 7px;
+  color: #999999;
+  text-transform: uppercase;
+  display: block;
+}
+.info textarea {
+  padding-top: 12px;
+  margin-left: 18px;
+  margin-top: 13px;
+  border: 0;
+  width: 90%;
+  color: black;
+  resize: none;
+}
+.info textarea:focus {
+  outline: none;
+}
+.info textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+.info :nth-child(6) {
+  margin-bottom: 5px;
+}
+.tmp__div__feed:nth-child(2) {
+  display: block;
+  margin-right: 10px;
+}
+.info .tmp__div__feed {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 13px;
+}
+
+.info__action {
+  cursor: pointer;
+}

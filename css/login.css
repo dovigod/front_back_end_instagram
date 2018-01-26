@@ -1,6 +1,6 @@
 .login {
   width: 100%;
-  max-width: 770px;
+  max-width: 800px;
 
   display: flex;
   justify-content: center;
@@ -11,7 +11,6 @@
 .login .login__column {
   width: 47.5%;
   margin-right: 30px;
-  position: relative;
 }
 
 .login .login__column > img {
