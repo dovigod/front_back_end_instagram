@@ -1,0 +1,62 @@
+{%extends "base.html"%} {%block title%}Feed{%endblock%} {%block content%}
+<main class="feed">
+
+    <div class="photo">
+        <header class="photo__header">
+
+            <img src="images/haha.jpg" alt="nellson" class="photo__header__img">
+            <a href="index.html" class="photo__header__link">Nellson Muntz</a>
+
+        </header>
+        <img src="images/haha.jpg" alt="nelson" class="photo__main_pic">
+        <div class="info">
+            <div class="info__icontainer">
+                <!--<i class="fa fa-heart" aria-hidden="true"></i>
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                   -->
+                <div class="info__icons">
+                    <span class="info__action">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </span>
+                    <span class="info__action">
+                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <div class="info__iconss">
+                    <span class="info__action">
+                        <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+
+            </div>
+
+            <span class="info__views">14,000 views</span>
+            <ul class="info__list">
+                <li class="info__list-item">
+                    <span class="info__name">simpsons</span> is an American animated sitcom created by Matt Groening for the Fox Broadcasting Company.
+                </li>
+                <li class="info__list-item">
+                    <span class="info__name">simpsons</span> Since its debut on December 17, 1989, 629 episodes of The Simpsons have been broadcast.
+                    Its 29th season began on October 1, 2017. It is the longest-running American sitcom and the longest-running
+                    American animated program, and, in 2009, it surpassed Gunsmoke as the longest-running American scripted
+                    primetime television series.
+                </li>
+                <li class="info__list-item">
+                    <span class="info__name">simpsons</span> hahahahahahaaha~~~~!
+                </li>
+            </ul>
+
+            <span class="info__date">2 days ago</span>
+            <div class="divider"></div>
+            <div class="tmp__div__feed">
+                <textarea placeholder="Add a comment..."></textarea>
+                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+</main>
+{% endblock%}

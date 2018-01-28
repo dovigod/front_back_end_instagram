@@ -8,21 +8,9 @@ def index(request):
     user = request.user
 
     if user.is_authenticated:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Feed',
-                'message': 'hellow dude~~'
-            })
+        return render(request, 'feed.html')
     else:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Log in',
-                'message': 'fuck u'
-            })
+        return render(request, 'login.html')
 
 
 def profile(request):
@@ -30,21 +18,9 @@ def profile(request):
     user = request.user
 
     if user.is_authenticated:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Profile',
-                'message': 'This is profile html'
-            })
+        return render(request, 'profile.html')
     else:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Log in',
-                'message': ' fuck u'
-            })
+        return render(request, 'login.html')
 
 
 def explore(request):
@@ -52,18 +28,6 @@ def explore(request):
     user = request.user
 
     if user.is_authenticated:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Explore',
-                'message': 'hellow dude~~'
-            })
+        return render(request, 'explore.html')
     else:
-        return render(
-            request,
-            'base.html',
-            context={
-                'title': 'Log in',
-                'message': 'fuck u'
-            })
+        return render(request, 'login.html')
