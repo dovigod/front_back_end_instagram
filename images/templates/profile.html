@@ -1,8 +1,8 @@
-{%extends "base.html"%} {%block title%}Profile{%endblock%} {% block content%}
+{%extends "base.html"%}{%load static%} {%block title%}Profile{%endblock%} {% block content%}
 <main class="profile">
 
     <header class="profile__header">
-        <img src="images/nick.jpeg" alt="simpson" class="profile__header__img">
+        <img src="{% static 'images/nick.jpeg' %}" alt="simpson" class="profile__header__img">
         <div class="profile__header__info">
             <div class="profile__header__info__storage">
                 <span class="profile__name">Nicolás Serrano Arévalo</span>
@@ -33,35 +33,35 @@
 
             <div class="container__column ">
                 <div class="hide"></div>
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
             <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
             <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
-            </div>
-        </div>
-        <div class="container__row ">
-            <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
         </div>
         <div class="container__row ">
             <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
             <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
             <div class="container__column ">
-                <img src="images/haha.jpg " alt="simpson " class="container__img ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
+            </div>
+        </div>
+        <div class="container__row ">
+            <div class="container__column ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
+            </div>
+            <div class="container__column ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
+            </div>
+            <div class="container__column ">
+                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
             </div>
         </div>
     </div>

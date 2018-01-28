@@ -1,12 +1,12 @@
-{% extends "base.html" %} {% block title%}Log In{% endblock%} {% block content%}
+ {% extends "base.html" %} {%load static %}{% block title%}Log In{% endblock%} {% block content%}
 <main class="login">
     <div class="login__column">
-        <img src="images/phone.png" alt="Phone" title="Phone">
+        <img src="{% static 'images/phone.png' %}" alt="Phone" title="Phone">
     </div>
     <div class="login__column">
         <div class="login__box">
 
-            <img src="images/logo.png" alt="Logo" class="login__logo">
+            <img src="{% static 'images/logo.png' %}" alt="Logo" class="login__logo">
 
             <form action="feed.html" method="get" class="login__form">
                 <input placeholder="Username" type="text" name="username" required="required">
@@ -17,7 +17,7 @@
             <div class="divider"></div>
             <span class="login__or">or</span>
             <div class="diveder_a"></div>
-            <a href="#" class="login__link login__link--dark">
+            <a href="www.facebook.com" class="login__link login__link--dark">
                 <i class="fa fa-facebook-square"></i>
                 Login with Facebook</a>
             <a href="#" class="login__link login__link--dark login__link--small">Forgot password</a>
@@ -34,8 +34,8 @@
         <div class="login__box login__box--transparent">
             <span>Get the app.</span>
             <div class="login__appstores">
-                <img src="images/ios.png" alt="" class="login__appstore">
-                <img src="images/android.png" alt="" class="login__appstore">
+                <img src="{% static 'images/ios.png' %}" alt="" class="login__appstore">
+                <img src="{% static 'images/android.png' %}" alt="" class="login__appstore">
             </div>
         </div>
     </div>

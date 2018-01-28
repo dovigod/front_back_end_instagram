@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import 'reset.css';
+@import 'login.css';
+@import 'globals.css';
+@import 'footer.css';
+@import 'navigation.css';
+@import 'feed.css';
+@import 'explore.css';
+@import 'profile.css';
+@import 'reative.css';
+/*   for practice~~
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body .father {
+  height: 700px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.box {
+  background-color: blue;
+  width: 300px;
+  min-height: 300px;
+  display: inline-block;
+  margin: 0px;
+}*/
+/*
+.child {
+  background-color: red;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20%;
+  border: 20px groove yellow;
+}
+*/
+/* inline == 블록을 span처럼 같은 라이네 놓게해줌*/

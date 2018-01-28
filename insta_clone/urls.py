@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from images import views
+from django.conf import settings
+from django.conf.urls.static import static
 urlpatterns = [
-    path('', views.index),
-    path('admin/', admin.site.urls),
-    path('explore/', views.explore),
-    path('profile/', views.profile),
-]
+    path('Dovi_is_god', views.index, name="index"),
+    path('Dovi', admin.site.urls, name="Dovi_is_God"),
+    path('is', views.explore, name="explore"),
+    path('God', views.profile, name="profile"),
+] + static(
+    settings.STATIC_URL, document_root=settings.STATIC_ROOT)

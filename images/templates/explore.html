@@ -1,206 +1,26 @@
-{%extends "base.html"%}{%block title%}Explore{%endblock%} {%block content%}
+ {%extends "base.html"%} {%load static %}{%block title%}Explore{%endblock%} {%block content%}
 <main class="explore">
     <div class="explore__large__container">
         <span class="explore__list__suggest">Suggested</span>
         <div class="explore__list__container">
             <ul class="explore__list">
+                {% for a in images%}
+                <li class="explore__list-item">
+                    <div class="explore__column">
+                        <div class="explore__profile-pic">
+                            <img src="{%static 'images/nick.jpeg'%}" alt="nellson says haha" class="explore__img dead">
+                        </div>
+                        <div class="explore__progfile-discription">
+                            <a href="index.html" class="explore__link">{{a.created_by.username}}</a>
+                            <span class="explore__discription">{{a.caption}}</span>
+                        </div>
+                    </div>
+                    <div class="explore__column">
+                        <button type="button" class="explore__button">Follow</button>
+                    </div>
+                </li>
+                {%endfor%}
 
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/nick.jpeg" alt="nellson says haha" class="explore__img dead">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">What the FUCCCKKKK!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/nick.jpeg" alt="nellson says haha" class="explore__img transforming">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">WTFFF!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/nick.jpeg" alt="nellson says haha" class="explore__img bouncy">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">WTF!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
-                <li class="explore__list-item">
-                    <div class="explore__column">
-                        <div class="explore__profile-pic">
-                            <img src="images/haha.jpg" alt="nellson says haha" class="explore__img">
-                        </div>
-                        <div class="explore__progfile-discription">
-                            <a href="index.html" class="explore__link">go back home!</a>
-                            <span class="explore__discription">Ha~! Ha~!</span>
-                        </div>
-                    </div>
-                    <div class="explore__column">
-                        <button type="button" class="explore__button">Follow</button>
-                    </div>
-                </li>
             </ul>
         </div>
     </div>

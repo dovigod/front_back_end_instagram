@@ -1,14 +1,17 @@
-{%extends "base.html"%} {%block title%}Feed{%endblock%} {%block content%}
+{%extends "base.html"%} {%load static%}{%block title%}Feed{%endblock%} {%block content%}
+
+
 <main class="feed">
 
+    {% for a in images %}
     <div class="photo">
         <header class="photo__header">
 
-            <img src="images/haha.jpg" alt="nellson" class="photo__header__img">
-            <a href="index.html" class="photo__header__link">Nellson Muntz</a>
+            <img src="{% static 'images/haha.jpg' %}" alt="nellson" class="photo__header__img">
+            <a href="{% url 'profile' %}" class="photo__header__link">{{ a.created_by.username }}</a>
 
         </header>
-        <img src="images/haha.jpg" alt="nelson" class="photo__main_pic">
+        <img src="{% static 'images/haha.jpg' %}" alt="nelson" class="photo__main_pic">
         <div class="info">
             <div class="info__icontainer">
                 <!--<i class="fa fa-heart" aria-hidden="true"></i>
@@ -36,20 +39,18 @@
             <span class="info__views">14,000 views</span>
             <ul class="info__list">
                 <li class="info__list-item">
-                    <span class="info__name">simpsons</span> is an American animated sitcom created by Matt Groening for the Fox Broadcasting Company.
+                    <span class="info__name">{{ a.created_by.username }}</span> {{ a.caption }}
                 </li>
                 <li class="info__list-item">
-                    <span class="info__name">simpsons</span> Since its debut on December 17, 1989, 629 episodes of The Simpsons have been broadcast.
+                    <span class="info__name">Simpsons</span> Since its debut on December 17, 1989, 629 episodes of The Simpsons have been broadcast.
                     Its 29th season began on October 1, 2017. It is the longest-running American sitcom and the longest-running
                     American animated program, and, in 2009, it surpassed Gunsmoke as the longest-running American scripted
                     primetime television series.
                 </li>
-                <li class="info__list-item">
-                    <span class="info__name">simpsons</span> hahahahahahaaha~~~~!
-                </li>
+
             </ul>
 
-            <span class="info__date">2 days ago</span>
+            <span class="info__date">{{a.created_at}}</span>
             <div class="divider"></div>
             <div class="tmp__div__feed">
                 <textarea placeholder="Add a comment..."></textarea>
@@ -58,5 +59,6 @@
         </div>
     </div>
 
+    {% endfor %}
 </main>
 {% endblock%}

@@ -1,0 +1,66 @@
+@media screen and (min-width: 300px) and (max-width: 700px) and (orientation: portrait) {
+  .header input {
+    display: none;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  .explore__list__suggest {
+    margin-bottom: 10px;
+  }
+  .explore__list-item {
+    border: 0;
+  }
+
+  footer {
+    width: 90%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer__column__footer__item {
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  .footer__item-link {
+    margin-bottom: 5px;
+  }
+
+  .feed .photo {
+    background-color: #dbdbdb;
+  }
+  .photo__header {
+    background-color: #fafafa;
+    border: 0;
+  }
+  .photo__header img {
+    border: 0;
+  }
+  .info textarea {
+    display: none;
+  }
+  .info .tmp__div__feed {
+    display: none;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+  }
+  .login .login__column > img {
+    display: none;
+  }
+
+  .login .login__column {
+    width: 70%;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login .login__column:nth-child(1) {
+    width: 0;
+  }
+}
+/*  child 표기법 알기******/
+/* landscape*/
