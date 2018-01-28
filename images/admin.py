@@ -33,6 +33,30 @@ class Image__admin(admin.ModelAdmin):
     )
 
 
+class Comment_admin(admin.ModelAdmin):
+
+    ordering = (
+        'written_at',
+    )
+
+    list_display = (
+        'created_by',
+        'written_at',
+        'created_for',
+    )
+
+    list_display_links = (
+        'created_for',
+    )
+    search_fields = (
+        'created_by',
+    )
+
+    list_filter = (
+        'written_at',
+    )
+
+
 admin.site.register(models.Image, Image__admin)
-admin.site.register(models.Comment)
+admin.site.register(models.Comment, Comment_admin)
 admin.site.register(models.Like)

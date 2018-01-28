@@ -12,7 +12,7 @@ class Image(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return f'{self.location}-{self.caption}'
+        return f'{self.location} - {self.caption}'
 
 
 class Comment(models.Model):
@@ -32,3 +32,4 @@ class Like(models.Model):
 
     def __str__(self):
         return f'{self.created_for}-{self.created_by}-{self.created_at}'
+
