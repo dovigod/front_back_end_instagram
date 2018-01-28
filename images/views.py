@@ -8,9 +8,21 @@ def index(request):
     user = request.user
 
     if user.is_authenticated:
-        return HttpResponse('You have reached the home!')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Feed',
+                'message': 'hellow dude~~'
+            })
     else:
-        return HttpResponse('fuck u')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Log in',
+                'message': 'fuck u'
+            })
 
 
 def profile(request):
@@ -18,9 +30,21 @@ def profile(request):
     user = request.user
 
     if user.is_authenticated:
-        return HttpResponse('Hellow Profile!!')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Profile',
+                'message': 'This is profile html'
+            })
     else:
-        return HttpResponse('fuck u')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Log in',
+                'message': ' fuck u'
+            })
 
 
 def explore(request):
@@ -28,16 +52,18 @@ def explore(request):
     user = request.user
 
     if user.is_authenticated:
-        return HttpResponse('Hellow Profile!!')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Explore',
+                'message': 'hellow dude~~'
+            })
     else:
-        return HttpResponse('fuck u')
-
-
-def feed(request):
-
-    user = request.user
-
-    if user.is_authenticated:
-        return HttpResponse('Hellow feed!!')
-    else:
-        return HttpResponse('fuck u')
+        return render(
+            request,
+            'base.html',
+            context={
+                'title': 'Log in',
+                'message': 'fuck u'
+            })
