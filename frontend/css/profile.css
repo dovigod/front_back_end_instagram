@@ -34,6 +34,9 @@
 .container__row .container__column:hover {
   opacity: 0.3;
 }
+.container__column img {
+  height: 266.33px;
+}
 
 .container__img {
   width: 100%;

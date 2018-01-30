@@ -16,23 +16,41 @@
   flex-direction: column;
   width: 100%;
 }
+.profile .container .heart {
+  display: inline-block;
+  margin-right: 10px;
+}
 .container .container__row {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  justify-content: center;
-  margin-left: 20px;
+
+  flex-wrap: wrap;
 }
 
 .container__row .container__column {
   max-width: 30%;
-  margin-right: 5%;
   margin-bottom: 5%;
   cursor: pointer;
-  transition: opacity 0.5s linear;
+
+  position: relative;
 }
-.container__row .container__column:hover {
-  opacity: 0.3;
+
+.hide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(10, 10, 10, 0.5);
+  opacity: 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+.container__column:hover .hide {
+  opacity: 0.8;
 }
 
 .container__img {

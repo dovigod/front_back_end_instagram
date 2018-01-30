@@ -2,14 +2,14 @@
 <main class="profile">
 
     <header class="profile__header">
-        <img src="{% static 'images/nick.jpeg' %}" alt="simpson" class="profile__header__img">
+        <img src="media/{{profiles.avatar}}" alt="simpson" class="profile__header__img">
         <div class="profile__header__info">
             <div class="profile__header__info__storage">
-                <span class="profile__name">Nicolás Serrano Arévalo</span>
+                <span class="profile__name">{{user.username}}</span>
                 <a href="edit_profile.html" class="profile__annoy">
                     <button class=" profile__edit__profile " type="button ">Edit Profile</button>
                 </a>
-                <span class="foggy ">
+                <span class="foggy">
                     <i class="fa fa-cog a__fog " aria-hidden="true "></i>
                 </span>
 
@@ -22,7 +22,7 @@
             </div>
 
             <div class="tmp__sentence__protect ">
-                <span class="profile__header__name" \>Nicolás Serrano Arévalo</span> WTF! </div>
+                <span class="profile__header__name" \>{{user.username}}</span> {{profiles.bio}} </div>
         </div>
 
 
@@ -30,41 +30,26 @@
 
     <div class="container ">
         <div class="container__row ">
+            {% for i in user.image_set.all %}
 
             <div class="container__column ">
-                <div class="hide"></div>
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
+                <div class="hide">
+                    {{ i.like_set.all.count }}
+                    <span class="heart">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </span>
+
+                    {{i.comment_set.all.count}}
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                </div>
+                <img src="/media/{{i.file}} " alt="simpson " class="container__img ">
             </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
+
+            {% endfor %}
         </div>
-        <div class="container__row ">
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-        </div>
-        <div class="container__row ">
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-            <div class="container__column ">
-                <img src="{% static 'images/haha.jpg' %} " alt="simpson " class="container__img ">
-            </div>
-        </div>
+
     </div>
+
 
 </main>
 {%endblock%}

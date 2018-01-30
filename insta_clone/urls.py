@@ -22,6 +22,7 @@ urlpatterns = [
     path('Dovi_is_god', views.index, name="index"),
     path('Dovi', admin.site.urls, name="Dovi_is_God"),
     path('is', views.explore, name="explore"),
+    path('upload', views.upload, name='upload'),
     path('God', views.profile, name="profile"),
 ] + static(
-    settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
